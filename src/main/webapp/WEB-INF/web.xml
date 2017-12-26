@@ -11,7 +11,7 @@
     </filter>
     <filter>
         <filter-name>App</filter-name>
-        <filter-class>com.h2off.HelloAppEngine</filter-class>
+        <filter-class>com.h2off.TimesheetApplication</filter-class>
     </filter>
     
     

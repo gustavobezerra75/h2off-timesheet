@@ -1,15 +1,15 @@
 import * as Types from '../actions/data';
 
 const initialState = {
-    test: null
+    jobs: null
 };
 
 export default function dataReducer(state = initialState, action) {
     switch(action.type) {
-        case Types.TEST_RECEIVED:
+        case Types.JOBS_RECEIVED:
             return {
                 ...state,
-                test: action.test
+                jobs: action.jobs
             };
         default:
             return state;

@@ -9,7 +9,7 @@ export class Main extends Component {
     }
 
     render() {
-        console.log(this.props.test);
+        console.log(this.props.jobs);
         return (
             <View style={styles.container}>
                 <Text>HELLO</Text>
@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
 
 export default Main = connect((state) => {
     return {
-        test: state.data.test
+        jobs: state.data.jobs
     }
 })(Main);

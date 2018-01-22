@@ -1,18 +1,18 @@
 import * as api from '../../api/api';
 
-export const TEST_RECEIVED = 'TEST_RECEIVED';
+export const JOBS_RECEIVED = 'JOBS_RECEIVED';
 
 export function getTestAction() {
     return (dispatch) => {
-        api.getTest().then((r) => {
-            dispatch(testReceived(r));
+        api.getJobs().then((r) => {
+            dispatch(jobsReceived(r));
         });
     }
 }
 
-export function testReceived(test) {
+export function jobsReceived(jobs) {
     return {
-        type: TEST_RECEIVED,
-        test: test
+        type: JOBS_RECEIVED,
+        jobs: jobs
     }
 }

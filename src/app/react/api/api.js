@@ -1,8 +1,8 @@
 const API = 'http://10.0.2.2:8080/api/v1';
 //const API = 'https://h2off-timesheet-test.appspot.com/api/v1';
 
-export function getTest() {
-    return get(API + "/test", null, null);
+export function getJobs() {
+    return get(API + "/jobs", null, null);
 }
 
 function get(url, token, params) {
